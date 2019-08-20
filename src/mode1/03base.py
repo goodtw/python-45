@@ -5,33 +5,37 @@
 
 ## python2.7时使用 raw_input ，高版本下使用 input
 name = input("What's your name?")
-sum = 100+100
-print('hello,%s' %name)
-print('sum = %d' %sum)
+sum = 100 + 100
+print('hello,%s' % name)
+print('sum = %d' % sum)
 
-#测试if
+
+# 测试if
 def testif(score):
-    if score>= 90:
-           print('Excellent')
+    if score >= 90:
+        print('Excellent')
     else:
-           if score < 60:
-               print('Fail')
-           else:
-               print('Good Job')
+        if score < 60:
+            print('Fail')
+        else:
+            print('Good Job')
+
 
 testif(100)
 
-#测试for循环
+
+# 测试for循环
 def testfor():
     sum = 0
-    for number in range(1,11,2):
+    for number in range(1, 11, 2):
         sum = sum + number
     print(sum)
+
 
 testfor()
 
 
-#测试while循环
+# 测试while循环
 
 def testwhile():
     sum = 0
@@ -41,42 +45,40 @@ def testwhile():
         number = number + 1
     print(sum)
 
+
 testwhile()
 
-#列表的使用
-lists = ['a','b','c']
+# 列表的使用
+lists = ['a', 'b', 'c']
 lists.append('d')
 print(lists)
 print(len(lists))
-lists.insert(0,'mm')
+lists.insert(0, 'mm')
 lists.pop()
 print(lists)
 
-#元组的使用
-tuples = ('tupleA','tupleB')
+# 元组的使用
+tuples = ('tupleA', 'tupleB')
 print(tuples[0])
 
-
 # 定义一个 dictionary
-score = {'guanyu':95,'zhangfei':96}
+score = {'guanyu': 95, 'zhangfei': 96}
 # 添加一个元素
 score['zhaoyun'] = 98
-print (score)
+print(score)
 # 删除一个元素
 score.pop('zhangfei')
 # 查看 key 是否存在
-print ('guanyu' in score)
+print('guanyu' in score)
 # 查看一个 key 对应的值
-print (score.get('guanyu'))
-print (score.get('yase',99))
-
+print(score.get('guanyu'))
+print(score.get('yase', 99))
 
 s = set(['a', 'b', 'c'])
 s.add('d')
 s.remove('b')
-print (s)
-print ('c' in s)
-
+print(s)
+print('c' in s)
 
 '''
 这是多行注释，用三个单引号
@@ -95,19 +97,22 @@ from package_name import moudule_name
 from package_name import *
 '''
 
-def addone(score):
-   return score + 1
-print (addone(99))
 
-#import scikit-learn
+def addone(score):
+    return score + 1
+
+
+print(addone(99))
+
+
+# import scikit-learn
 
 
 def sumNum():
-    sum=0
-    for number in range(1,99,2):
+    sum = 0
+    for number in range(1, 99, 2):
         sum = sum + number
     print(sum)
 
 
 sumNum()
-
